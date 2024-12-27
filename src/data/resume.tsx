@@ -66,7 +66,7 @@ export const DATA = {
       logoUrl: "/CRAlogo.png",
       start: "Sep 2024",
       end: "Dec 2024",
-      description:(
+      description: (
         <>
           Built a custom image segmentation model for detecting plant leaf diseases for my project proposal. The model uses TensorFlow and PyTorch and combines{" "}
           <a
@@ -75,7 +75,7 @@ export const DATA = {
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-            Meta's Segment Anything Model (SAM) 2's
+            Meta&apos;s Segment Anything Model (SAM) 2&apos;s
           </a>{" "}
           image encoder with a U-shaped architecture. The proposal draft and video can be found{" "}
           <a
