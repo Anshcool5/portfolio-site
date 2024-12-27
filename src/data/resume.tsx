@@ -11,7 +11,7 @@ export const DATA = {
     "University student with a passion for Machine Learning, Cloud Computing, and Software Development.",
   summary:
     "I'm currently pursuing a Computing Science Honors degree at the University of Alberta, graduating in 2026. I have a strong interest in machine learning, cloud architecture, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, and an enthusiasm for tackling real-world challenges.",
-  avatarUrl: "converted1.png",
+  avatarUrl: "/converted1.png",
   skills: [
     "React",
     "Next.js",
