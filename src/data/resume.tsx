@@ -4,7 +4,6 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Anshul Verma",
   initials: "AV",
-  url: "https://anshul5.io", /* Website doesn't exist */
   location: "Edmonton, AB",
   locationLink: "https://www.google.com/maps/place/edmonton",
   description:
@@ -13,51 +12,37 @@ export const DATA = {
     "I'm currently pursuing a Computing Science Honors degree at the University of Alberta, graduating in 2026. I have a strong interest in machine learning, cloud architecture, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, and an enthusiasm for tackling real-world challenges.",
   avatarUrl: "/converted1.png",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
+    "C#",
     "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
+    "RISC-V",
+    "MongoDb",
+    "JavaScript",
+    "CSS",
     "Java",
-    "C++",
+    "C",
+    "TensorFlow",
+    "PyTorch"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "anshu.ver4@gmail.com",
+    tel: "+18259776471",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/Anshcool5",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/anshulv5",
         icon: Icons.linkedin,
 
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
