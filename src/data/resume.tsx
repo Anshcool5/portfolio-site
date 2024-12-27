@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "University student with a passion for Machine Learning, Computer Vision, and Software Development.",
   summary:
-    "[I'm currently pursuing a Computing Science Honors degree at the University of Alberta, graduating in 2026](/#education). I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
+    "I'm currently pursuing a [Computing Science Honors degree at the University of Alberta](/#education), graduating in 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
   avatarUrl: "/converted1.png",
   skills: [
     "C#",
@@ -66,8 +66,28 @@ export const DATA = {
       logoUrl: "/CRAlogo.png",
       start: "Sep 2024",
       end: "Dec 2024",
-      description:
-        "Built a custom image segmentation model for detecting plant leaf diseases for my project proposal. The model uses TensorFlow and PyTorch and combines [Meta's Segment Anything Model (SAM) 2's](https://github.com/facebookresearch/sam2) image encoder with a U-shaped architecture. The proposal draft and video can be found [here](https://drive.google.com/drive/folders/1Rt9GklWqR3D31j_62ofeVNAnvjCqwnBv)",
+      description:(
+        <>
+          Built a custom image segmentation model for detecting plant leaf diseases for my project proposal. The model uses TensorFlow and PyTorch and combines{" "}
+          <a
+            href="https://github.com/facebookresearch/sam2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            Meta's Segment Anything Model (SAM) 2's
+          </a>{" "}
+          image encoder with a U-shaped architecture. The proposal draft and video can be found{" "}
+          <a
+            href="https://drive.google.com/drive/folders/1Rt9GklWqR3D31j_62ofeVNAnvjCqwnBv"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            here
+          </a>.
+        </>
+      ),
     },
     {
       company: "Deepija Telecom Pvt. Ltd.",
