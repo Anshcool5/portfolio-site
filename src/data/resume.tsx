@@ -2,16 +2,16 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  name: "Anshul Verma",
+  initials: "AV",
+  url: "https://anshul5.io", /* Website doesn't exist */
+  location: "Edmonton, AB",
+  locationLink: "https://www.google.com/maps/place/edmonton",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "University student with a passion for Machine Learning, Cloud Computing, and Software Development.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "I'm currently pursuing a Computing Science Honors degree at the University of Alberta, graduating in 2026. I have a strong interest in machine learning, cloud architecture, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, and an enthusiasm for tackling real-world challenges.",
+  avatarUrl: "converted1.png",
   skills: [
     "React",
     "Next.js",
