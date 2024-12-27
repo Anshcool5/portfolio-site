@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import * as AvatarPrimitive from "@radix-ui/react-avatar"
+import * as React from "react";
+import * as AvatarPrimitive from "@radix-ui/react-avatar";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 // Avatar Component
 const Avatar = React.forwardRef<
@@ -13,13 +13,13 @@ const Avatar = React.forwardRef<
   <AvatarPrimitive.Root
     ref={ref}
     className={cn(
-      "relative flex h-20 w-20 shrink-0 overflow-hidden rounded-full border border-gray-300", // Updated size and border
+      "relative flex h-20 w-20 shrink-0 overflow-hidden rounded-full border border-gray-300",
       className
     )}
     {...props}
   />
-))
-Avatar.displayName = AvatarPrimitive.Root.displayName
+));
+Avatar.displayName = AvatarPrimitive.Root.displayName;
 
 // Avatar Image Component
 const AvatarImage = React.forwardRef<
@@ -28,11 +28,11 @@ const AvatarImage = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AvatarPrimitive.Image
     ref={ref}
-    className={cn("h-full w-full object-cover", className)} // Ensures image scales properly
+    className={cn("h-full w-full object-cover", className)}
     {...props}
   />
-))
-AvatarImage.displayName = AvatarPrimitive.Image.displayName
+));
+AvatarImage.displayName = AvatarPrimitive.Image.displayName;
 
 // Avatar Fallback Component
 const AvatarFallback = React.forwardRef<
@@ -42,52 +42,46 @@ const AvatarFallback = React.forwardRef<
   <AvatarPrimitive.Fallback
     ref={ref}
     className={cn(
-      "flex h-full w-full items-center justify-center rounded-full bg-gray-200 text-gray-600 font-semibold", // Fallback with styling
+      "flex h-full w-full items-center justify-center rounded-full bg-gray-200 text-gray-600 font-semibold",
       className
     )}
     {...props}
   >
     AV
   </AvatarPrimitive.Fallback>
-))
-AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
+));
+AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
 // Example Usage Component
 const AvatarDisplay = () => {
+  const [text, setText] = React.useState("University Student");
+
   React.useEffect(() => {
-    const textElement = document.querySelector(".animate-text-change") as HTMLElement;
-    if (!textElement) return;
+    const messages = ["University Student", "ML Enthusiast", "Cloud Specialist"];
+    let index = 0;
 
     const textLoad = () => {
-      setTimeout(() => {
-        textElement.textContent = "University Student";
-      }, 0);
-      setTimeout(() => {
-        textElement.textContent = "ML Enthusiast";
-      }, 4000);
-      setTimeout(() => {
-        textElement.textContent = "Cloud Specialist";
-      }, 8000);
+      index = (index + 1) % messages.length;
+      setText(messages[index]);
     };
 
-    textLoad();
-    const intervalId = setInterval(textLoad, 12000);
+    const intervalId = setInterval(textLoad, 4000);
     return () => clearInterval(intervalId);
   }, []);
 
   return (
     <div className="flex items-center justify-center py-10">
       <Avatar>
-        <AvatarImage src="/converted1.png" alt="Centered Avatar Image" />
+        <AvatarImage src="/converted1.png" alt="Anshul Verma's Avatar" />
         <AvatarFallback>Anshul</AvatarFallback>
       </Avatar>
       <div className="ml-4">
         <p className="text-xl font-semibold">Anshul Verma</p>
         <div className="text-sm text-gray-500">I&apos;m a(n) ⤵️</div>
-        <div className="animate-text-change text-lg font-medium">University Student</div>
+        <div className="animate-text-change text-lg font-medium">{text}</div>
       </div>
     </div>
   );
 };
 
-export { Avatar, AvatarImage, AvatarFallback, AvatarDisplay }
+export { Avatar, AvatarImage, AvatarFallback, AvatarDisplay };
