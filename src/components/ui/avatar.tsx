@@ -5,6 +5,7 @@ import * as AvatarPrimitive from "@radix-ui/react-avatar"
 
 import { cn } from "@/lib/utils"
 
+// Avatar Component
 const Avatar = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>
@@ -12,7 +13,7 @@ const Avatar = React.forwardRef<
   <AvatarPrimitive.Root
     ref={ref}
     className={cn(
-      "relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full",
+      "relative flex h-20 w-20 shrink-0 overflow-hidden rounded-full border border-gray-300", // Updated size and border
       className
     )}
     {...props}
@@ -20,18 +21,20 @@ const Avatar = React.forwardRef<
 ))
 Avatar.displayName = AvatarPrimitive.Root.displayName
 
+// Avatar Image Component
 const AvatarImage = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Image>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>
 >(({ className, ...props }, ref) => (
   <AvatarPrimitive.Image
     ref={ref}
-    className={cn("aspect-square h-full w-full", className)}
+    className={cn("h-full w-full object-cover", className)} // Ensures image scales properly
     {...props}
   />
 ))
 AvatarImage.displayName = AvatarPrimitive.Image.displayName
 
+// Avatar Fallback Component
 const AvatarFallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>
@@ -39,12 +42,51 @@ const AvatarFallback = React.forwardRef<
   <AvatarPrimitive.Fallback
     ref={ref}
     className={cn(
-      "flex h-full w-full items-center justify-center rounded-full bg-muted",
+      "flex h-full w-full items-center justify-center rounded-full bg-gray-200 text-gray-600 font-semibold", // Fallback with styling
       className
     )}
     {...props}
-  />
+  >
+    AV
+  </AvatarPrimitive.Fallback>
 ))
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
 
-export { Avatar, AvatarImage, AvatarFallback }
+// Example Usage Component
+const AvatarDisplay = () => (
+  <div className="flex items-center justify-center py-10">
+    <Avatar>
+      <AvatarImage src="/converted1.png" alt="Centered Avatar Image" />
+      <AvatarFallback>Anshul</AvatarFallback>
+    </Avatar>
+    <div className="ml-4">
+      <p className="text-xl font-semibold">Anshul Verma</p>
+      <div className="text-sm text-gray-500">I'm a(n) ⤵️</div>
+      <div className="animate-text-change text-lg font-medium">University Student</div>
+    </div>
+  </div>
+)
+
+// Text Animation Logic (Optional JS integration like your HTML)
+React.useEffect(() => {
+  const textElement = document.querySelector(".animate-text-change") as HTMLElement
+  if (!textElement) return
+
+  const textLoad = () => {
+    setTimeout(() => {
+      textElement.textContent = "University Student"
+    }, 0)
+    setTimeout(() => {
+      textElement.textContent = "ML Enthusiast"
+    }, 4000)
+    setTimeout(() => {
+      textElement.textContent = "Cloud Specialist"
+    }, 8000)
+  }
+
+  textLoad()
+  const intervalId = setInterval(textLoad, 12000)
+  return () => clearInterval(intervalId)
+}, [])
+
+export { Avatar, AvatarImage, AvatarFallback, AvatarDisplay }
