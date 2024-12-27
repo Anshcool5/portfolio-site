@@ -4,6 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Anshul Verma",
   initials: "AV",
+  url: "https://anshul5.io", /* Website doesn't exist */
   location: "Edmonton, AB",
   locationLink: "https://www.google.com/maps/place/edmonton",
   description:
