@@ -53,40 +53,41 @@ const AvatarFallback = React.forwardRef<
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
 
 // Example Usage Component
-const AvatarDisplay = () => (
-  <div className="flex items-center justify-center py-10">
-    <Avatar>
-      <AvatarImage src="/converted1.png" alt="Centered Avatar Image" />
-      <AvatarFallback>Anshul</AvatarFallback>
-    </Avatar>
-    <div className="ml-4">
-      <p className="text-xl font-semibold">Anshul Verma</p>
-      <div className="text-sm text-gray-500">I'm a(n) ⤵️</div>
-      <div className="animate-text-change text-lg font-medium">University Student</div>
+const AvatarDisplay = () => {
+  React.useEffect(() => {
+    const textElement = document.querySelector(".animate-text-change") as HTMLElement;
+    if (!textElement) return;
+
+    const textLoad = () => {
+      setTimeout(() => {
+        textElement.textContent = "University Student";
+      }, 0);
+      setTimeout(() => {
+        textElement.textContent = "ML Enthusiast";
+      }, 4000);
+      setTimeout(() => {
+        textElement.textContent = "Cloud Specialist";
+      }, 8000);
+    };
+
+    textLoad();
+    const intervalId = setInterval(textLoad, 12000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <div className="flex items-center justify-center py-10">
+      <Avatar>
+        <AvatarImage src="/converted1.png" alt="Centered Avatar Image" />
+        <AvatarFallback>Anshul</AvatarFallback>
+      </Avatar>
+      <div className="ml-4">
+        <p className="text-xl font-semibold">Anshul Verma</p>
+        <div className="text-sm text-gray-500">I&apos;m a(n) ⤵️</div>
+        <div className="animate-text-change text-lg font-medium">University Student</div>
+      </div>
     </div>
-  </div>
-)
-
-// Text Animation Logic (Optional JS integration like your HTML)
-React.useEffect(() => {
-  const textElement = document.querySelector(".animate-text-change") as HTMLElement
-  if (!textElement) return
-
-  const textLoad = () => {
-    setTimeout(() => {
-      textElement.textContent = "University Student"
-    }, 0)
-    setTimeout(() => {
-      textElement.textContent = "ML Enthusiast"
-    }, 4000)
-    setTimeout(() => {
-      textElement.textContent = "Cloud Specialist"
-    }, 8000)
-  }
-
-  textLoad()
-  const intervalId = setInterval(textLoad, 12000)
-  return () => clearInterval(intervalId)
-}, [])
+  );
+};
 
 export { Avatar, AvatarImage, AvatarFallback, AvatarDisplay }
