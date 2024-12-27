@@ -34,6 +34,7 @@ export const ResumeCard = ({
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // Check if the click target is a hyperlink
     if ((e.target as HTMLElement).tagName === "A") {
+      e.stopPropagation();
       return; // Allow the link click to proceed
     }
     if (description) {

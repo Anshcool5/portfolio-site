@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "University student with a passion for Machine Learning, Computer Vision, and Software Development.",
   summary:
-    "I'm currently pursuing a [Computing Science Honors degree at the University of Alberta](/#education), graduating in 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
+    "I'm currently pursuing a [Computing Science Honors degree](/#education) at the University of Alberta, graduating in 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
   avatarUrl: "/converted1.png",
   skills: [
     "C#",
