@@ -32,6 +32,10 @@ export const ResumeCard = ({
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    // Check if the click target is a hyperlink
+    if ((e.target as HTMLElement).tagName === "A") {
+      return; // Allow the link click to proceed
+    }
     if (description) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
