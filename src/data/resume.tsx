@@ -58,6 +58,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Albertaloop",
+      badges: [],
+      href: "https://albertaloop.ca/",
+      location: "In-person",
+      title: "Business Lead",
+      logoUrl: "/abloop.png",
+      start: "Sep 2024",
+      end: "Ongoing",
+      description:
+        "Currently serving as the Business lead of our University's hyperloop chapter where I conduct outreach and aid in event planning while managing assets worth thousands.",
+    },
+    {
       company: "Computing Research Association (CRA)",
       href: "https://cra.org/ur2phd",
       badges: [],
