@@ -258,6 +258,14 @@ export const DATA = {
     },
   ],
   hackathons: [
-    
+    // Example placeholder
+  {
+    title: "Hackathon Name",
+    description: "Brief description",
+    location: "Location",
+    dates: "Jan 2025",
+    image: "/path/to/image.jpg",
+    links: [{ type: "Website", href: "https://example.com" }]
+  }
   ],
 } as const;
