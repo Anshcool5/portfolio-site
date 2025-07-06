@@ -72,7 +72,7 @@ const AvatarDisplay = () => {
   return (
     <div className="flex items-center justify-center py-10">
       <Avatar>
-        <AvatarImage src="/converted1.png" alt="Anshul Verma's Avatar" />
+        <AvatarImage src="/LinkedIn_Photo.jpeg" alt="Anshul Verma's Avatar" />
         <AvatarFallback>Anshul</AvatarFallback>
       </Avatar>
       <div className="ml-4">

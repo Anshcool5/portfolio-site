@@ -213,7 +213,7 @@ export default function Page() {
                 >
                   with a direct question on LinkedIn
                 </Link>{" "}
-                and I&apos;ll respond whenever I can.
+                and I&apos;ll respond at my earliest convenience.
               </p>
             </div>
           </BlurFade>

@@ -11,7 +11,7 @@ export const DATA = {
     "University student with a passion for Machine Learning, Computer Vision, and Software Development.",
   summary:
     "I'm currently pursuing a [Computing Science Honors degree](/#education) at the University of Alberta, graduating in June 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
-  avatarUrl: "/converted1.png",
+  avatarUrl: "/LinkedIn_Photo.jpeg",
   skills: [
     "C#",
     "Python",
@@ -74,7 +74,7 @@ export const DATA = {
       href: "https://cra.org/ur2phd",
       badges: [],
       location: "Remote",
-      title: "Ur2PhD Research Student",
+      title: "UR2PhD Research Student",
       logoUrl: "/CRAlogo.png",
       start: "Sep 2024",
       end: "Present",
