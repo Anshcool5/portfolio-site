@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "University student with a passion for Machine Learning, Computer Vision, and Software Development.",
   summary:
-    "I'm currently pursuing a [Computing Science Honors degree](/#education) at the University of Alberta, graduating in 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
+    "I'm currently pursuing a [Computing Science Honors degree](/#education) at the University of Alberta, graduating in June 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
   avatarUrl: "/converted1.png",
   skills: [
     "C#",
@@ -41,7 +41,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/anshulv5",
+        url: "https://www.linkedin.com/in/anshuv2",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -62,25 +62,25 @@ export const DATA = {
       badges: [],
       href: "https://albertaloop.ca/",
       location: "In-person",
-      title: "Business Lead",
+      title: "Business Co-Lead and Software team member",
       logoUrl: "/abloop.png",
       start: "Sep 2024",
-      end: "Ongoing",
+      end: "Present",
       description:
-        "Currently serving as the Business lead of our University's hyperloop chapter where I conduct outreach and aid in event planning while managing assets worth thousands.",
+        "Currently serving as the Business co-lead of our University's hyperloop chapter where I conduct outreach and aid in event planning while managing assets worth thousands.",
     },
     {
       company: "Computing Research Association (CRA)",
       href: "https://cra.org/ur2phd",
       badges: [],
       location: "Remote",
-      title: "Ur2PhD Program Candidate",
+      title: "Ur2PhD Research Student",
       logoUrl: "/CRAlogo.png",
       start: "Sep 2024",
-      end: "Dec 2024",
+      end: "Present",
       description: (
         <>
-          Built a custom image segmentation model for detecting plant leaf diseases for my project proposal. The model uses TensorFlow and PyTorch and combines{" "}
+          Built a proposal for custom image segmentation model for detecting plant leaf diseases. The model uses TensorFlow and PyTorch and combines{" "}
           <a
             href="https://github.com/facebookresearch/sam2"
             target="_blank"
@@ -97,6 +97,13 @@ export const DATA = {
             className="text-blue-500 hover:underline"
           >
             here
+          </a>. The proposal was recently aprroved funding via the <a
+            href="https://cra.org/ur2phd/for-undergraduate-students/funding/#:~:text=Conference%20Travel%20Application-,REU%20Funding,-Application%20Deadlines"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            UR2PhD REU program
           </a>.
         </>
       ),
