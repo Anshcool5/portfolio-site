@@ -124,20 +124,20 @@ export const DATA = {
 
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2024",
-      end: "2024",
-    },
-    {
       school: "University of Alberta",
       href: "https://www.ualberta.ca",
       degree: "Bachelor of Science with Honors in Computer Science",
       logoUrl: "/UalbertaLogo.png",
       start: "2022",
       end: "2026",
+    },
+    {
+      school: "Buildspace",
+      href: "https://buildspace.so",
+      degree: "s5",
+      logoUrl: "/buildspace.jpg",
+      start: "2024",
+      end: "2024",
     },
   ],
   projects: [
@@ -266,15 +266,14 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "HackED 2025",
+      dates: "February 15th - 17th, 2025",
+      location: "Edmonton, Alberta",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Developed an AI-driven business intelligence platform using LangChain, LLaMa, Hugging Face models, and Pinecone. Built end-to-end on Django backend and React frontend; explored Groq for inference optimization.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+        "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/275/570/datas/full_width.png",
+      links: ['https://devpost.com/software/turbo-alpaca'],
     },
   ],
 } as const;
