@@ -148,7 +148,7 @@ export const DATA = {
     {
       school: "Edmonton Unlimited",
       href: "https://edmontonunlimited.com/programs/student-founders-program/",
-      degree: "Student Founders Program 2025",
+      degree: "Student Founders Launch",
       logoUrl: "/edmonton_unlimited_logo.png",
       start: "2025",
       end: "2025",
@@ -164,32 +164,32 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Figorar",
+      href: "https://figorar.com/",
+      dates: "June 2025 - Present",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Figorar lets merchants create and update loyalty programs while letting customers track and redeem rewards in real time.",
       technologies: [
-        "Next.js",
+        "React",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Vite",
+        "Tailwind CSS",
+        "Post CSS",
+        "Node.js",
+        "Supabase",
+        "Netlify",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://figorar.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
       title: "Magic UI",
