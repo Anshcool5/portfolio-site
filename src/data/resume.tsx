@@ -12,17 +12,31 @@ export const DATA = {
   summary:
     "I'm currently pursuing a [Computing Science Honors degree](/#education) at the University of Alberta, graduating in June 2026. I have a strong interest in machine learning, computer vision, and scalable software solutions. My journey includes hands-on experience with diverse projects, continuous learning, research, and an enthusiasm for tackling real-world challenges.",
   avatarUrl: "/LinkedIn_Photo.jpeg",
-  skills: [
+  languages: [
+    "Python", 
+    "R", 
+    "Java", 
+    "Julia", 
+    "C", 
+    "C#", 
+    "SQL",
     "C#",
-    "Python",
     "RISC-V",
-    "MongoDb",
     "JavaScript",
     "CSS",
-    "Java",
-    "C",
-    "TensorFlow",
-    "PyTorch"
+  ],
+  ml_frameworks: [
+    "TensorFlow", 
+    "PyTorch", 
+    "scikit-learn", 
+    "Hugging Face Transformers",
+    "unsloth",
+    "LangChain",
+  ],
+  databases: [
+    "Snowflake", 
+    "PostgreSQL", 
+    "MongoDB",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
