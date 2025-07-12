@@ -146,6 +146,14 @@ export const DATA = {
       end: "2026",
     },
     {
+      school: "Edmonton Unlimited",
+      href: "https://edmontonunlimited.com/programs/student-founders-program/",
+      degree: "Student Founders Program 2025",
+      logoUrl: "/edmonton_unlimited_logo.png",
+      start: "2025",
+      end: "2025",
+    },
+    {
       school: "Buildspace",
       href: "https://buildspace.so",
       degree: "s5",
