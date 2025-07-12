@@ -273,7 +273,11 @@ export const DATA = {
         "Developed an AI-driven business intelligence platform using LangChain, LLaMa, Hugging Face models, and Pinecone. Built end-to-end on Django backend and React frontend; explored Groq for inference optimization.",
       image:
         "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/275/570/datas/full_width.png",
-      links: ['https://devpost.com/software/turbo-alpaca'],
+      links:{
+          type: "Blog Post",
+          href: "https://devpost.com/software/turbo-alpaca",
+          icon: <Icons.globe className="size-3" />,
+        },
     },
   ],
 } as const;
