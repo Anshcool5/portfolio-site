@@ -274,7 +274,7 @@ export const DATA = {
       image:
         "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/275/570/datas/full_width.png",
       links:{
-          type: "Blog Post",
+          title: "Blog Post",
           href: "https://devpost.com/software/turbo-alpaca",
           icon: <Icons.globe className="size-3" />,
         },
