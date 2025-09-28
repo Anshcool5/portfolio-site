@@ -138,6 +138,48 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="cloud_mlops">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Cloud MLops</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.cloud_mlops.map((cloud_mlop, id) => (
+              <BlurFade key={cloud_mlop} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={cloud_mlop}>{cloud_mlop}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="bi_visualization">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">BI Visualization</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.bi_visualization.map((bi_viz, id) => (
+              <BlurFade key={bi_viz} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={bi_viz}>{bi_viz}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="tools">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Tools</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.tools.map((tool, id) => (
+              <BlurFade key={tool} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={tool}>{tool}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>

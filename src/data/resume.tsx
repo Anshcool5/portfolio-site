@@ -19,24 +19,42 @@ export const DATA = {
     "Julia", 
     "C", 
     "C#", 
-    "SQL",
-    "C#",
-    "RISC-V",
-    "JavaScript",
-    "CSS",
+    "SQL", 
+    "JavaScript", 
+    "TypeScript", 
+    "CSS", 
+    "RISC-V"
   ],
   ml_frameworks: [
     "TensorFlow", 
     "PyTorch", 
     "scikit-learn", 
-    "Hugging Face Transformers",
-    "unsloth",
-    "LangChain",
+    "Hugging Face Transformers", 
+    "LangChain"
   ],
   databases: [
-    "Snowflake", 
     "PostgreSQL", 
-    "MongoDB",
+    "MongoDB"
+  ],
+  cloud_mlops: [
+    "Cybera Cloud", // since you deployed projects there
+    "AWS (in progress)", 
+    "Docker", 
+    "Git", 
+    "CI/CD Pipelines"
+  ],
+  bi_visualization: [
+    "Tableau", 
+    "Power BI", 
+    "Plotly", 
+    "Matplotlib"
+  ],
+  tools: [
+    "Jupyter", 
+    "Excel", 
+    "GitHub", 
+    "Supabase", 
+    "Netlify"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
