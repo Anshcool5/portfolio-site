@@ -72,6 +72,54 @@ export const DATA = {
 
   work: [
     {
+      company: "Figorar",
+      badges: [],
+      href: "https://figorar.com/",
+      location: "Hybrid",
+      title: "Student Cofounder",
+      logoUrl: "/Figorar-logo-only.png",
+      start: "May 2025",
+      end: "Present",
+      description:(
+        <>
+          Cofounder of Figorar — a digital loyalty platform for small businesses with mentorship from{" "}
+          <a
+            href="https://edmontonunlimited.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            Edmonton Unlimited
+          </a>{" "}
+          , built with React/TypeScript, Supabase, and Netlify.
+        </>
+      ),
+    },
+    {
+      company: "Computing Research Association (CRA)",
+      badges: [],
+      href: "https://cra.org/ur2phd/for-undergraduate-students/funding/#:~:text=are%20especially%20limited.-,REU%20Funding,-Application%20Deadlines",
+      location: "Remote",
+      title: "UR2PhD REU Student Researcher",
+      logoUrl: "/CRAlogo.png",
+      start: "May 2025",
+      end: "Sep 2025",
+      description:
+        "Selected for CRA’s UR2PhD REU program and awarded $11000 research funding. Built a novel reinforcement learning-based image segmentation architecture using the PLANET pipeline, achieving 33% faster training under GPU constraints. Authored a NeurIPS-style research paper on my contributions to the shared domain of reinforcement learning and computer vision for satellite image segmentation.",
+    },
+    {
+      company: "Albertaloop",
+      badges: [],
+      href: "https://albertaloop.ca/",
+      location: "In-person",
+      title: "Software Team Lead",
+      logoUrl: "/abloop.png",
+      start: "Sep 2025",
+      end: "Present",
+      description:
+        "Leading the AlbertaLoop software team, where I architect real-time control systems in Python/C++ and mentor 10+ developers to build IoT-driven Hyperloop technology.",
+    },
+    {
       company: "Albertaloop",
       badges: [],
       href: "https://albertaloop.ca/",
@@ -79,9 +127,9 @@ export const DATA = {
       title: "Business Co-Lead and Software team member",
       logoUrl: "/abloop.png",
       start: "Sep 2024",
-      end: "Present",
+      end: "Sep 2025",
       description:
-        "Currently serving as the Business co-lead of our University's hyperloop chapter where I conduct outreach and aid in event planning while managing assets worth thousands.",
+        "As Business Co-Lead and Software Developer at AlbertaLoop, I helped bridge technical and business strategy. Organized sponsor showcases, while also contributing to our ROS-based control systems with LoRa and CANbus integration for our Hyperloop pod.",
     },
     {
       company: "Computing Research Association (CRA)",
@@ -91,7 +139,7 @@ export const DATA = {
       title: "UR2PhD Research Student",
       logoUrl: "/CRAlogo.png",
       start: "Sep 2024",
-      end: "Present",
+      end: "Dec 2024",
       description: (
         <>
           Built a proposal for custom image segmentation model for detecting plant leaf diseases. The model uses TensorFlow and PyTorch and combines{" "}
@@ -111,13 +159,6 @@ export const DATA = {
             className="text-blue-500 hover:underline"
           >
             here
-          </a>. The proposal was recently aprroved funding via the <a
-            href="https://cra.org/ur2phd/for-undergraduate-students/funding/#:~:text=Conference%20Travel%20Application-,REU%20Funding,-Application%20Deadlines"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            UR2PhD REU program
           </a>.
         </>
       ),
