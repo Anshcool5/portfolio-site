@@ -150,9 +150,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  Projects that span AI, full-stack development, and data-driven applications. From intelligent BI platforms to loyalty platforms, these showcase how I build impactful and scalable solutions.
                 </p>
               </div>
             </div>

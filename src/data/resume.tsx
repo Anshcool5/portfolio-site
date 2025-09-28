@@ -269,37 +269,35 @@ export const DATA = {
       video: "", // optional: short demo clip of dashboard/chatbot
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Course Advisor AI",
+      href: "", // replace with repo/demo link
+      dates: "2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Built an AI-powered course advisor for the University of Alberta using retrieval-augmented generation (RAG). The system indexes course catalogs into a vector database and allows students to query recommended courses, with responses restricted to official catalog data. Integrated an interactive Gradio UI for real-time Q&A.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "LangChain",
+        "ChromaDB",
+        "HuggingFace Embeddings",
+        "Groq LLM API",
+        "Python",
+        "Gradio",
+        "JSONLoader"
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
+          type: "LinkedIn Post",
+          href: "https://www.linkedin.com/posts/anshuv2_buildsapce-ai-langchain-activity-7221377426394640385-wth2?utm_source=share&utm_medium=member_desktop&rcm=ACoAADl2W2IBdieZ5gvuz4KvEKOADxlJ6xHbBvI", // optional
+          icon: <Icons.linkedin className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/Anshcool5/course-wizard",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/course-wizard.jpeg", // add a screenshot of the Gradio UI
+      video: ""  // optional: short screen recording of the UI
     },
   ],
 } as const;
