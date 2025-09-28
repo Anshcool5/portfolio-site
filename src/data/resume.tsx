@@ -327,21 +327,4 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
-  hackathons: [
-    {
-      title: "HackED 2025",
-      dates: "February 15th - 17th, 2025",
-      location: "Edmonton, Alberta",
-      description:
-        "Developed an AI-driven business intelligence platform using LangChain, LLaMa, Hugging Face models, and Pinecone. Built end-to-end on Django backend and React frontend; explored Groq for inference optimization.",
-      image:
-        "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/275/570/datas/full_width.png",
-      links:[{
-          title: "Blog Post",
-          href: "https://devpost.com/software/turbo-alpaca",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-    },
-  ],
 } as const;
