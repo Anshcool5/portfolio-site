@@ -233,36 +233,40 @@ export const DATA = {
         "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Turbo Alpaca – AI Business Intelligence Platform",
+      href: "", // replace with your deployed link
+      dates: "2025",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Built an AI-powered business intelligence platform combining LLM orchestration, semantic search, and interactive dashboards. Designed to analyze documents, forecast trends, and deliver real-time insights for businesses.",
       technologies: [
-        "Next.js",
-        "Typescript",
+        "Django",
+        "Python",
+        "React",
+        "TypeScript",
+        "LangChain",
+        "LLaMA-3.3",
+        "Groq API",
+        "Pinecone",
+        "ChromaDB",
         "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Docker",
+        "Plotly",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
+          type: "Devpost",
+          href: "https://devpost.com/software/turbo-alpaca", // replace if hosted elsewhere
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/Anshcool5/turbo-alpaca", // if public
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "", // you could add a screenshot of the dashboard
+      video: "", // optional: short demo clip of dashboard/chatbot
     },
     {
       title: "llm.report",
@@ -296,35 +300,6 @@ export const DATA = {
       ],
       image: "",
       video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
 } as const;
